@@ -3,7 +3,7 @@ function mengelompokkanAngka(arr) {
   for (i = 0; i < arr.length; i++){
     if (arr[i]%3 === 0){
       region[2].push(arr[i])
-    else if (arr[i]%2 === 0){
+    }else if (arr[i]%2 === 0){
       region[0].push(arr[i])
     }
     else {
