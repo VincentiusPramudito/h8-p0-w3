@@ -12,7 +12,7 @@ function targetTerdekat(arr) {
       console.log(arrX);
     }
     }
-    if (arrO[i] === 0){
+    if (arrO.length === 0 || arrX.length === 0){
       return 0;
     }
     for (j = 0; j < arrO.length; j++){
@@ -27,6 +27,36 @@ function targetTerdekat(arr) {
 
   return hitung
 }
+
+//atau
+//function targetTerdekat(arr) {
+//   var counterO, counterX, temp;
+//   var min = arr.length;
+
+//   for(var i = 0; i < arr.length; i++){
+//     if(arr[i] === 'o'){
+//       counterO = i
+//     }else if(arr[i] === 'x'){
+//       counterX = i
+//     }
+
+//     console.log(counterX, counterO)
+
+//     temp = Math.abs(counterO - counterX)
+
+//     if(temp < min){
+//       min = temp
+//     }
+//   }
+
+//   if(counterO === undefined || counterX === undefined){
+//       return 0
+//     }
+//   return min
+// }
+
+
+
 
 // TEST CASES
 console.log(targetTerdekat([' ', ' ', 'o', ' ', ' ', 'x', ' ', 'x'])); // 3

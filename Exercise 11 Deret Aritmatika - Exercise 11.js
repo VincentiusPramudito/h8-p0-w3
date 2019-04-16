@@ -1,17 +1,18 @@
 function tentukanDeretAritmatika(arr) {
-  var hitung = 0;
-  var result = 0;
-  var jumlahSelisih = 0;
-  for (i = arr.length-1; i > 0; i--){
-    var selisih = arr[i]-arr[i-1]
-    jumlahSelisih += selisih   
+  var temp = [];
+  var temp2 = 0;
+  var count = 0;
+  for (var i = arr.length-1; i > 0; i--){
+    count = arr[i]-arr[i-1]
+    temp.push(count)
   }
-  result = jumlahSelisih%(arr.length-1)
-  if (result === 0){
-    return true
-  }
-  else {
-    return false
+  
+  for(var j = 0; j < temp.length; j++){
+    if(temp[j] === temp[j+1]){
+      return true
+    }else{
+      return false
+    }
   }
 }
 
