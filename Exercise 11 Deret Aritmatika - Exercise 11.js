@@ -1,6 +1,5 @@
 function tentukanDeretAritmatika(arr) {
   var temp = [];
-  var temp2 = 0;
   var count = 0;
   for (var i = arr.length-1; i > 0; i--){
     count = arr[i]-arr[i-1]
