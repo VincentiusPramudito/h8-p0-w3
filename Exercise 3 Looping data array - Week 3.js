@@ -6,23 +6,12 @@ var input = [
                 ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
             ]
 
-function dataHandling(input){
-  for (i = 0; i < input.length; i++){
-      nomor =  ('Nomor ID: ' + input[i][0])
-      console.log (nomor)
-      nama =  ('Nama Lengkap: ' + input[i][1])
-      console.log (nama)
-      ttl =  ('TTL: ' + input[i][2] + input[i][3])
-      console.log (ttl)
-      hobi =  ('Hobi: ' + input[i][4] + '\n')
-      console.log (hobi)  
+function dataHandling(){
+  var result = '';
+  for(var i = 0; i < input.length; i++){
+    result += 'Nomor ID: ' + input[i][0] + '\nNama Lengkap: ' + input[i][1] + '\nTTL: ' + input[i][2] + ' ' + input[i][3] + '\nHobby: ' + input[i][4] + '\n\n'
   }
-      data = nomor + '\n' + nama + '\n' + ttl + '\n' + hobi
-      return data
+  console.log(result)
 }
- console.log(dataHandling(input))
 
-// Nomor ID:  0001
-// Nama Lengkap:  Roman Alamsyah
-// TTL:  Bandar Lampung 21/05/1989
-// Hobi:  Membaca
+dataHandling(input)
